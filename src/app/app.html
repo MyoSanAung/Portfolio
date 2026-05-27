@@ -15,6 +15,12 @@
 
 <!-- ===== HERO ===== -->
 <section class="hero" id="hero">
+  <div class="bg-particles">
+    <div class="particle particle-1"></div>
+    <div class="particle particle-2"></div>
+    <div class="particle particle-3"></div>
+    <div class="particle particle-4"></div>
+  </div>
   <div class="hero-bg-glow glow-1"></div>
   <div class="hero-bg-glow glow-2"></div>
   <div class="hero-content">
@@ -34,7 +40,7 @@
     </div>
     <div class="hero-stats">
       <div class="stat">
-        <span class="stat-num">2+</span>
+        <span class="stat-num">1++</span>
         <span class="stat-label">Years Experience</span>
       </div>
       <div class="stat-divider"></div>
@@ -50,9 +56,15 @@
     </div>
   </div>
   <div class="hero-visual">
-    <div class="hero-portrait">
-      <img src="myosanaung.png" alt="Myo San Aung" class="portrait-photo" />
-      <div class="portrait-blob"></div>
+    <div class="hero-portrait-wrap slide-up float-anim">
+      <span class="floating-chip chip-1">Angular 🚀</span>
+      <span class="floating-chip chip-2">Spring Boot ⚙️</span>
+      <span class="floating-chip chip-3">PostgreSQL 🗄️</span>
+      <span class="floating-chip chip-4">JLPT N3 🇯🇵</span>
+      <div class="hero-portrait shine-effect" app3dTilt [maxTilt]="10" [scale]="1.02">
+        <img src="/myosanaung.png" alt="Myo San Aung" class="portrait-photo" style="transform: translateZ(30px);" />
+        <div class="portrait-blob" style="transform: translateZ(-20px) translateX(-50%);"></div>
+      </div>
     </div>
   </div>
 </section>
@@ -91,30 +103,30 @@
         </div>
       </div>
       <div class="about-cards">
-        <div class="info-card">
-          <span class="info-icon">🎓</span>
-          <div>
+        <div class="info-card" app3dTilt [maxTilt]="15" [scale]="1.05">
+          <span class="info-icon" style="transform: translateZ(25px);">🎓</span>
+          <div style="transform: translateZ(15px);">
             <strong>Education</strong>
             <p>B.C.Sc — Univ. of Computer Study (Banmaw)</p>
           </div>
         </div>
-        <div class="info-card">
-          <span class="info-icon">📍</span>
-          <div>
+        <div class="info-card" app3dTilt [maxTilt]="15" [scale]="1.05">
+          <span class="info-icon" style="transform: translateZ(25px);">📍</span>
+          <div style="transform: translateZ(15px);">
             <strong>Location</strong>
             <p>Zayyawadyy St, Sanchaung, Yangon</p>
           </div>
         </div>
-        <div class="info-card">
-          <span class="info-icon">🏅</span>
-          <div>
+        <div class="info-card" app3dTilt [maxTilt]="15" [scale]="1.05">
+          <span class="info-icon" style="transform: translateZ(25px);">🏅</span>
+          <div style="transform: translateZ(15px);">
             <strong>Certifications</strong>
             <p>LCCI JET Level 3 · JLPT N3</p>
           </div>
         </div>
-        <div class="info-card">
-          <span class="info-icon">🌐</span>
-          <div>
+        <div class="info-card" app3dTilt [maxTilt]="15" [scale]="1.05">
+          <span class="info-icon" style="transform: translateZ(25px);">🌐</span>
+          <div style="transform: translateZ(15px);">
             <strong>Languages</strong>
             <p>Burmese · English · Japanese (N2 learning)</p>
           </div>
@@ -124,7 +136,6 @@
   </div>
 </section>
 
-<!-- ===== EXPERIENCE ===== -->
 <section class="section section-alt" id="experience">
   <div class="container">
     <div class="section-header">
@@ -135,15 +146,15 @@
 
       <div class="timeline-item">
         <div class="tl-dot"></div>
-        <div class="tl-card">
-          <div class="tl-header">
-            <div>
+        <div class="tl-card shine-effect" app3dTilt [maxTilt]="6" [scale]="1.02" style="transform-style: preserve-3d;">
+          <div class="tl-header" style="transform: translateZ(20px); transform-style: preserve-3d;">
+            <div style="transform: translateZ(10px);">
               <h3 class="tl-role">Java Developer</h3>
               <p class="tl-company">Myanmar Information Technology</p>
             </div>
-            <span class="tl-date">Aug 2024 – Present</span>
+            <span class="tl-date" style="transform: translateZ(15px);">Aug 2024 – Present</span>
           </div>
-          <ul class="tl-list">
+          <ul class="tl-list" style="transform: translateZ(12px);">
             <li>Developed and maintained full-stack web apps using <strong>Angular</strong> (UI) and <strong>Java Spring
                 Boot</strong> (Backend).</li>
             <li>Designed and implemented RESTful APIs for user management, reporting, and data processing.</li>
@@ -157,24 +168,24 @@
             <li>Performed database migration and data validation between PostgreSQL and MSSQL.</li>
             <li>Used Git for version control and Maven for project build management.</li>
           </ul>
-          <div class="tl-tags">
+          <div class="tl-tags" style="transform: translateZ(18px);">
             <span>Angular</span><span>Spring Boot</span><span>PostgreSQL</span>
             <span>MSSQL</span><span>JasperReports</span><span>Java</span><span>Git</span>
           </div>
         </div>
       </div>
-
+ 
       <div class="timeline-item">
         <div class="tl-dot"></div>
-        <div class="tl-card">
-          <div class="tl-header">
-            <div>
+        <div class="tl-card shine-effect" app3dTilt [maxTilt]="6" [scale]="1.02" style="transform-style: preserve-3d;">
+          <div class="tl-header" style="transform: translateZ(20px); transform-style: preserve-3d;">
+            <div style="transform: translateZ(10px);">
               <h3 class="tl-role">Web Developer</h3>
               <p class="tl-company">BSCamp (On Job Training)</p>
             </div>
-            <span class="tl-date">Jun 2023 – Jan 2024</span>
+            <span class="tl-date" style="transform: translateZ(15px);">Jun 2023 – Jan 2024</span>
           </div>
-          <ul class="tl-list">
+          <ul class="tl-list" style="transform: translateZ(12px);">
             <li>Designed and developed RESTful APIs using <strong>Spring Boot</strong> following layered architecture.
             </li>
             <li>Implemented frontend components using <strong>Vue.js</strong> for dynamic restaurant search and
@@ -185,7 +196,7 @@
             <li>Conducted API testing using <strong>Postman</strong> and prepared test evidence documentation.</li>
             <li>Ensured system stability through structured testing and debugging processes.</li>
           </ul>
-          <div class="tl-tags">
+          <div class="tl-tags" style="transform: translateZ(18px);">
             <span>Spring Boot</span><span>Vue.js</span><span>MSSQL</span>
             <span>Postman</span><span>Japanese SDLC</span>
           </div>
@@ -205,7 +216,7 @@
     </div>
     <div class="skills-grid">
 
-      <div class="skill-category">
+      <div class="skill-category" scrollAnimation="blurIn" [animationDelay]="0" [animationDuration]="1600" app3dTilt [maxTilt]="10" [scale]="1.03">
         <h3 class="skill-cat-title"><span class="cat-icon">⚙️</span> Backend</h3>
         <div class="skill-list">
           <div class="skill-item">
@@ -235,7 +246,7 @@
         </div>
       </div>
 
-      <div class="skill-category">
+      <div class="skill-category" scrollAnimation="blurIn" [animationDelay]="300" [animationDuration]="1600" app3dTilt [maxTilt]="10" [scale]="1.03">
         <h3 class="skill-cat-title"><span class="cat-icon">🎨</span> Frontend</h3>
         <div class="skill-list">
           <div class="skill-item">
@@ -259,7 +270,7 @@
         </div>
       </div>
 
-      <div class="skill-category">
+      <div class="skill-category" scrollAnimation="blurIn" [animationDelay]="600" [animationDuration]="1600" app3dTilt [maxTilt]="10" [scale]="1.03">
         <h3 class="skill-cat-title"><span class="cat-icon">🗄️</span> Database & DevOps</h3>
         <div class="skill-list">
           <div class="skill-item">
@@ -302,55 +313,55 @@
     </div>
     <div class="projects-grid">
 
-      <div class="project-card featured">
-        <div class="project-top">
+      <div class="project-card featured shine-effect" app3dTilt [maxTilt]="8" [scale]="1.02">
+        <div class="project-top" style="transform: translateZ(15px);">
           <span class="project-badge">Featured</span>
           <div class="project-links">
             <a href="https://github.com/MyoSanAungGH" target="_blank" title="GitHub" class="icon-link">⬡</a>
           </div>
         </div>
-        <h3 class="project-title">MMS — Merchant Management System</h3>
-        <p class="project-desc">
+        <h3 class="project-title" style="transform: translateZ(25px);">MMS — Merchant Management System</h3>
+        <p class="project-desc" style="transform: translateZ(12px);">
           A comprehensive enterprise platform for managing merchants, discount and fee plans,
           country/state master data, NRC, and postal data. Features RBAC, real-time search
           suggestions, dynamic Excel export, and inline CRUD dialogs across all modules.
         </p>
-        <div class="project-tags">
+        <div class="project-tags" style="transform: translateZ(20px);">
           <span>Spring Boot</span><span>Angular</span><span>PostgreSQL</span>
           <span>JWT</span><span>JPA</span><span>JasperReports</span>
         </div>
       </div>
-
-      <div class="project-card">
-        <div class="project-top">
+ 
+      <div class="project-card shine-effect" app3dTilt [maxTilt]="12" [scale]="1.04">
+        <div class="project-top" style="transform: translateZ(15px);">
           <div class="project-links">
             <a href="https://github.com/MyoSanAungGH" target="_blank" title="GitHub" class="icon-link">⬡</a>
           </div>
         </div>
-        <h3 class="project-title">Burmese Restaurant Guide</h3>
-        <p class="project-desc">
+        <h3 class="project-title" style="transform: translateZ(25px);">Burmese Restaurant Guide</h3>
+        <p class="project-desc" style="transform: translateZ(12px);">
           A dynamic restaurant search and filtering platform built during on-job training at BSCamp.
           Implemented Vue.js components for real-time search, backed by Spring Boot APIs and
           optimised stored procedures in MSSQL.
         </p>
-        <div class="project-tags">
+        <div class="project-tags" style="transform: translateZ(20px);">
           <span>Spring Boot</span><span>Vue.js</span><span>MSSQL</span><span>Postman</span>
         </div>
       </div>
-
-      <div class="project-card">
-        <div class="project-top">
+ 
+      <div class="project-card shine-effect" app3dTilt [maxTilt]="12" [scale]="1.04">
+        <div class="project-top" style="transform: translateZ(15px);">
           <div class="project-links">
             <a href="https://github.com/MyoSanAungGH" target="_blank" title="GitHub" class="icon-link">⬡</a>
           </div>
         </div>
-        <h3 class="project-title">Agent MIS</h3>
-        <p class="project-desc">
+        <h3 class="project-title" style="transform: translateZ(25px);">Agent MIS</h3>
+        <p class="project-desc" style="transform: translateZ(12px);">
           A Management Information System for agents. Provides structured data management,
           reporting, and performance dashboards. Leverages Spring Boot for the backend,
           Angular for UI, and JasperReports for PDF/Excel output.
         </p>
-        <div class="project-tags">
+        <div class="project-tags" style="transform: translateZ(20px);">
           <span>Spring Boot</span><span>Angular</span><span>JasperReports</span><span>PostgreSQL</span>
         </div>
       </div>

@@ -7,10 +7,10 @@
 }
 
 :root {
-  --bg-primary: #0d1b2a;
-  --bg-secondary: #0a1628;
-  --bg-card: #112240;
-  --bg-card-hover: #163060;
+  --bg-primary: #0a111a;
+  --bg-secondary: #05090f;
+  --bg-card: #101a26;
+  --bg-card-hover: #152233;
   --accent: #2b7bc4;
   --accent-2: #06b6d4;
   --accent-glow: rgba(43, 123, 196, 0.3);
@@ -29,7 +29,7 @@ html {
 }
 
 body {
-  background-color: #0d1b2a;
+  background-color: #0a111a;
   color: var(--text-primary);
   font-family: var(--font-body);
   line-height: 1.6;
