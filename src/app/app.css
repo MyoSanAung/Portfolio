@@ -452,8 +452,6 @@
     animation: heroSubShimmer 4s ease-in-out infinite;
     position: relative;
     display: inline-block;
-    padding-right: 4px;
-    border-right: 2px solid var(--accent-2);
 }
 
 /* Blinking cursor effect on hero subtitle */
